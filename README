@@ -12,3 +12,13 @@ Usage:
 Include a reference to the generated css file from your master page or main razor layout.
 
 <link href="@Url.Content("~/Content/sass/style.css")" rel="stylesheet" type="text/css" />
+
+To change the format of the generated css file, include one of the following directives as the first line to the style.scss file.
+
+//* scss-compile-options: :style => :expanded
+
+//* scss-compile-options: :style => :compressed
+
+//* scss-compile-options: :style => :compact
+
+//* scss-compile-options: :style => :nested
