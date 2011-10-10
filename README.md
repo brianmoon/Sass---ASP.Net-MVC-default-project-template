@@ -1,4 +1,4 @@
-# SASS ASP.Net MVC Template
+# SASS ASP.Net MVC Style Template
 
 This is a SASS implementation of the ASP.Net MVC Template default stylesheet.
 
@@ -14,7 +14,7 @@ URL: http://www.mindscapehq.com/products/web-workbench
 
 * Include a reference to the generated style.css file from your master page or main razor layout.
 
-`<link href="@Url.Content("~/Content/sass/style.css")" rel="stylesheet" type="text/css" />`
+	`<link href="@Url.Content("~/Content/sass/style.css")" rel="stylesheet" type="text/css" />`
 
 ## Output formatting
 
