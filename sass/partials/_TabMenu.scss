@@ -1,0 +1,57 @@
+﻿@import "_Common";
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul {
+	margin-bottom: 20px;
+    line-height: 1.6em;
+
+	&#menu {
+		border-bottom: 1px #5C87B2 solid;
+		padding: 0 0 2px;
+		position: relative;
+		margin: 0;
+		text-align: right;
+
+		li {
+			display: inline;
+			list-style: none;
+
+			&#greeting {
+				padding: 10px 20px;
+				font-weight: bold;
+				text-decoration: none;
+				line-height: 2.8em;
+				color: $alt-text-color;
+			}
+
+			a {
+				padding: 10px 20px;
+				font-weight: bold;
+				text-decoration: none;
+				line-height: 2.8em;
+				background-color: #e8eef4;
+				color: #034af3;
+
+				@include border-radius(4px, 4px, 0, 0);
+
+				&:hover {
+					background-color: $content-background-color;
+					text-decoration: none;
+				}
+
+				&:active {
+					background-color: #a6e2a6;
+					text-decoration: none;
+				}
+			}
+
+			&.selected {
+				a {
+					background-color: $content-background-color;
+					color: $main-accent-text-color;
+				}
+			}
+		}
+	}
+}

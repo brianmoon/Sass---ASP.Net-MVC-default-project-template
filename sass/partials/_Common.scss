@@ -1,0 +1,41 @@
+﻿$main-text-color: #696969;
+$alt-text-color: #fff;
+$main-accent-text-color: #000;
+
+$control-text-color: #444;
+$error-color: #f00;
+$error-background-color: #fee;
+
+$main-background-color: #5c87b2;
+$content-background-color: #fff;
+
+@mixin html5-element-display {
+	display: block;
+}
+
+@mixin standard-container {
+	border: 1px solid #ccc;
+}
+
+// Border Radius
+@mixin border-radius($tl: 5px, $tr: 5px, $br: 5px, $bl: 5px) {
+  -moz-border-radius: $tl $tr $br $bl;
+  -webkit-border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius: $br;
+  -webkit-border-bottom-left-radius: $bl;
+  border-radius: $tl $tr $br $bl;
+}
+
+// clear fix for floats
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
+}

@@ -1,0 +1,49 @@
+﻿@import "_Common";
+
+/* PRIMARY LAYOUT ELEMENTS  
+----------------------------------------------------------*/
+.page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header {
+	@extend header;
+}
+
+#menucontainer {
+	margin-top: 40px;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: $alt-text-color;
+
+	a {
+		color: $alt-text-color;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#main {
+    padding: 30px 30px 15px 30px;
+    background-color: $content-background-color;
+	@include border-radius(4px, 0, 0, 0);
+}
+
+#footer {
+	@extend footer;
+}

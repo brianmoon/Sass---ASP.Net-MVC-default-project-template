@@ -1,0 +1,96 @@
+﻿@import "_Common";
+
+$control-font-size: 1.2em;
+
+@mixin standard-control {
+	@include standard-container;
+	padding: 2px;
+	color: $control-text-color;
+	font-size: $control-font-size;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+fieldset {
+    @include standard-container;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+	font: {
+		size:  $control-font-size;
+		weight: bold;
+	}
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+	@include standard-control;
+    width: 200px;
+}
+
+select {
+	@include standard-control;
+}
+
+input[type="submit"] {
+    font-size: $control-font-size;
+    padding: 5px;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: $error-color;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid $error-color;
+    background-color: $error-background-color;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: $error-color;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.error {
+    color: $error-color;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
