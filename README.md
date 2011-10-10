@@ -20,7 +20,7 @@ URL: http://www.mindscapehq.com/products/web-workbench
 
 To change the format of the generated css file, include one of the following directives as the first line to the style.scss file.
 
-> //* scss-compile-options: :style => :expanded
-> //* scss-compile-options: :style => :compressed
-> //* scss-compile-options: :style => :compact
-> //* scss-compile-options: :style => :nested
+	//* scss-compile-options: :style => :expanded
+	//* scss-compile-options: :style => :compressed
+	//* scss-compile-options: :style => :compact
+	//* scss-compile-options: :style => :nested
