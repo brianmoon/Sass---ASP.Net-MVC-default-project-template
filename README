@@ -1,0 +1,14 @@
+SASS ASP.Net MVC Template
+==========================================================
+
+This is a SASS implementation of the ASP.Net MVC Template default stylesheet.
+
+Running SASS via Visual Studio 2010 requires the Web Workbench extension from Mindscape.
+
+URL: http://www.mindscapehq.com/products/web-workbench
+
+Usage:
+
+Include a reference to the generated css file from your master page or main razor layout.
+
+<link href="@Url.Content("~/Content/sass/style.css")" rel="stylesheet" type="text/css" />
